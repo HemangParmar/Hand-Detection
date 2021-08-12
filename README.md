@@ -1,6 +1,3 @@
-
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/hemang-parmar-125656133/]
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -54,6 +51,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisite
 
+To 
+
 
 
 ### Installation
@@ -75,9 +74,29 @@ List of things you need to install.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Hand gesture recognition use in many areas for human-computer interaction. For robot control, virtual environments, television controls, etc. For any geture recongnition system, accurate hand detection is necessary. Accurate hand detection can give more accurate outcome in applications. 
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+## Results
+
+#### Hand Detection using Skin color
+
+#### Hue, Saturation and Value color model
+
+![HSV](https://user-images.githubusercontent.com/77574279/129238612-b716ac3b-d889-46cd-8473-36d1e5a389ca.jpg)
+
+#### YCbCr (Luminance and Chrominance color model)
+![YCbCr_](https://user-images.githubusercontent.com/77574279/129238674-44d13cb4-9dcc-4287-a3bb-aff4585116b7.jpg)
+
+#### Result - Combination of HSV and YCbCr color model
+![Final](https://user-images.githubusercontent.com/77574279/129238720-0c24c948-7b43-4e14-82d4-b8fb3443ab95.jpg)
+
+
+### Hand detection using motion detection using thresholding
+
+![Contours](https://user-images.githubusercontent.com/77574279/129239666-12739d4e-39ed-4248-ae4e-4f47e6adf326.jpeg)
+
+![Thresholded](https://user-images.githubusercontent.com/77574279/129239707-2bb68369-107f-453f-8bf6-f6e0680c19c9.jpeg)
+
 
 
 <!-- CONTACT -->
