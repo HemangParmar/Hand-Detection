@@ -69,7 +69,22 @@ List of things you need to install.
   ```sh
   pip install numpy
   ```
+## Libraries
 
+Opencv - Opencv is a library for computer vision, machine learning and image processing.
+
+
+### Apply threshold value to the image
+
+Befor applying it, need to convert image into grayscale
+```sh
+thresh = cv.threshold(imgray, 127, 255, 0)
+```
+### Draw contours
+
+```sh
+contours, hierarchy = cv.findContours(thresh, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
