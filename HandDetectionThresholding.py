@@ -9,12 +9,6 @@ bg = None
 def empty(a):
     pass
 
-#cv2.namedWindow("Parameters")
-#cv2.resizeWindow("Parameters", 640,240)
-#cv2.createTrackbar("Threshold1", "Parameters",0,255,empty)
-#cv2.createTrackbar("Threshold2", "Parameters",0,255,empty)
-#cv2.createTrackbar("Area", "Parameters",5000,30000,empty)
-
 #--------------------------------------------------
 # To find the running average over the background
 #--------------------------------------------------
