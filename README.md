@@ -121,7 +121,9 @@ Your Name - Hemang Parmar - hparmar6@lakeheadu.ca.com
 Project Link: [https://github.com/HemangParmar/Hand-Detection](https://github.com/HemangParmar/Hand-Detection)
 
 
-## Reference
+## References
+
+https://docs.opencv.org/4.5.2/d6/d00/tutorial_py_root.html
 
 [https://github.com/CHEREF-Mehdi/SkinDetection]
 
