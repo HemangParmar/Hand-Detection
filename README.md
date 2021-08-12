@@ -54,6 +54,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisite
 
+
+
 ### Installation
 
 List of things you need to install.
@@ -83,7 +85,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 Your Name - Hemang Parmar - hparmar6@lakeheadu.ca.com
 
-Project Link: [https://github.com/your_username/repo_name]()
+Project Link: [https://github.com/HemangParmar/Hand-Detection](https://github.com/HemangParmar/Hand-Detection)
 
 
 
