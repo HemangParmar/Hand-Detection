@@ -1,5 +1,5 @@
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/hemang-parmar-125656133/]
 
 <!-- PROJECT LOGO -->
 <br />
