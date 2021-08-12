@@ -49,10 +49,9 @@ Human-Computer Interaction using hand gesture recognition is a great advancement
 This is how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisite
+### Hardware
 
-To 
-
+A simple web cam or any other external camera. For the programing 
 
 
 ### Installation
@@ -120,6 +119,13 @@ Hand gesture recognition use in many areas for human-computer interaction. For r
 Your Name - Hemang Parmar - hparmar6@lakeheadu.ca.com
 
 Project Link: [https://github.com/HemangParmar/Hand-Detection](https://github.com/HemangParmar/Hand-Detection)
+
+
+## Reference
+
+[https://github.com/CHEREF-Mehdi/SkinDetection]
+
+[https://github.com/dtaneja123/Hand_Recognition/blob/master/Hand_gesture_final.py]
 
 
 
