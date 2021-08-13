@@ -22,7 +22,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -38,6 +37,8 @@
 
 Human-Computer Interaction using hand gesture recognition is a great advancement in technology that makes our life easier and convenient. For any gesture recognition, Hand detection is important that is a pre-processing step. In this project, hand segmentation is done using skin color and motion detection using thresholding. Using a web camera, the hand is segmented and then we can use it in any application. 
 
+Hand segmentation using two methods: 1) Skin color detection 2) Motion detection using thresholding
+
 ### Built With
 
 * [Python](https://www.python.org/)
@@ -46,13 +47,11 @@ Human-Computer Interaction using hand gesture recognition is a great advancement
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get started, first need to install all important libraries for image processing. 
 
 ### Hardware
 
-A simple web cam or any other external camera. For the programing 
-
+A simple web cam or any other external camera. 
 
 ### Installation
 
@@ -72,17 +71,21 @@ List of things you need to install.
 
 Opencv - Opencv is a library for computer vision, machine learning and image processing.
 
-
+## Some functionality
 ### Apply threshold value to the image
 
-Befor applying it, need to convert image into grayscale
+Befor applying it, convert image into grayscale
 ```sh
 thresh = cv.threshold(imgray, 127, 255, 0)
 ```
-### Draw contours
+### Find and draw contours
 
 ```sh
 contours, hierarchy = cv.findContours(thresh, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+```
+
+```sh
+cv.drawContours(img, contours, -1, (0,255,0), 3)
 ```
 
 <!-- USAGE EXAMPLES -->
@@ -93,6 +96,8 @@ Hand gesture recognition use in many areas for human-computer interaction. For r
 ## Results
 
 #### Hand Detection using Skin color
+
+![Original](https://user-images.githubusercontent.com/77574279/129291577-cc314ea2-12ba-4bde-96b3-85eef7a1b4a3.jpg)
 
 #### Hue, Saturation and Value color model
 
@@ -107,10 +112,7 @@ Hand gesture recognition use in many areas for human-computer interaction. For r
 
 ### Hand detection using motion detection using thresholding
 
-![Contours](https://user-images.githubusercontent.com/77574279/129239666-12739d4e-39ed-4248-ae4e-4f47e6adf326.jpeg)
-
-![Thresholded](https://user-images.githubusercontent.com/77574279/129239707-2bb68369-107f-453f-8bf6-f6e0680c19c9.jpeg)
-
+![FinalHand](https://user-images.githubusercontent.com/77574279/129291504-b88ea04b-41dc-4f17-99b8-dd5d7bf3ad0a.jpeg)
 
 
 <!-- CONTACT -->
