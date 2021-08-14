@@ -95,7 +95,9 @@ Hand gesture recognition use in many areas for human-computer interaction. For r
 
 ## Results
 
-#### Hand Detection using Skin color
+#### Hand Detection using Skin color:
+
+Combination of HSV and YCbCr model is used for hand segmentation. 
 
 ![Original](https://user-images.githubusercontent.com/77574279/129291577-cc314ea2-12ba-4bde-96b3-85eef7a1b4a3.jpg)
 
@@ -110,7 +112,9 @@ Hand gesture recognition use in many areas for human-computer interaction. For r
 ![Final](https://user-images.githubusercontent.com/77574279/129238720-0c24c948-7b43-4e14-82d4-b8fb3443ab95.jpg)
 
 
-### Hand detection using motion detection using thresholding
+### Hand detection using motion detection using thresholding:
+
+Otsu's method selects the threshold value automatically and assigned to the image. Then Contours are drawn around the hand region to extract the hand. 
 
 ![FinalHand](https://user-images.githubusercontent.com/77574279/129291504-b88ea04b-41dc-4f17-99b8-dd5d7bf3ad0a.jpeg)
 
