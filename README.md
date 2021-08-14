@@ -127,6 +127,8 @@ Your Name - Hemang Parmar - hparmar6@lakeheadu.ca.com
 
 Project Link: [https://github.com/HemangParmar/Hand-Detection](https://github.com/HemangParmar/Hand-Detection)
 
+Project Presentation Link : [Youtube](https://youtu.be/2rlejWirJXg)
+
 
 ## References
 
