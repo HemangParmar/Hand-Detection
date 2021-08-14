@@ -31,8 +31,6 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -89,6 +87,8 @@ contours, hierarchy = cv.findContours(thresh, cv.RETR_TREE, cv.CHAIN_APPROX_SIMP
 cv.drawContours(img, contours, -1, (0,255,0), 3)
 ```
 
+###
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -135,7 +135,3 @@ https://docs.opencv.org/4.5.2/d6/d00/tutorial_py_root.html
 [https://github.com/CHEREF-Mehdi/SkinDetection]
 
 [https://github.com/dtaneja123/Hand_Recognition/blob/master/Hand_gesture_final.py]
-
-
-
-
