@@ -91,7 +91,7 @@ cv.drawContours(img, contours, -1, (0,255,0), 3)
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Hand gesture recognition use in many areas for human-computer interaction. For robot control, virtual environments, television controls, etc. For any geture recongnition system, accurate hand detection is necessary. Accurate hand detection can give more accurate outcome in applications. 
+Hand gesture recognition using in many areas for human-computer interaction. HCI can makes our life easier and faster. Hand gesture is the best way to interact with the machines. To control the robot, sign language recognition, etc are the example of its applications.
 
 ## Results
 
