@@ -13,8 +13,7 @@ def run_avg(image, aWeight):
 
     # compute weighted average, accumulate it and update the background
     cv2.accumulateWeighted(image, bg, aWeight)
-
-
+    
 cam = cv2.VideoCapture(0)
 
 # region of interest (ROI) coordinates
@@ -31,19 +30,19 @@ while True:
     # get the ROI
     roi = frame[top:bottom, right:left]
 
-    #converting from gbr to hsv color space
-    img_HSV = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
+    #converting from rgb to hsv color space
+    HSV_Image = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
 
     #skin color range for hsv color space
-    HSV_mask = cv2.inRange(img_HSV, (0, 15, 0), (17,170,255))
-    HSV_mask = cv2.morphologyEx(HSV_mask, cv2.MORPH_OPEN, np.ones((3,3), np.uint8))
+    HSV_color = cv2.inRange(HSV_Image, (0, 15, 0), (17,170,255))
+    HSV_mask = cv2.morphologyEx(HSV_color, cv2.MORPH_OPEN, np.ones((3,3), np.uint8))
 
-    #converting from gbr to YCbCr color space
-    img_YCrCb = cv2.cvtColor(roi, cv2.COLOR_BGR2YCrCb)
+    #converting from rgb to YCbCr color space
+    YCrCb_Image = cv2.cvtColor(roi, cv2.COLOR_BGR2YCrCb)
 
-    #skin color range for hsv color space
-    YCrCb_mask = cv2.inRange(img_YCrCb, (0, 135, 85), (255,180,135))
-    YCrCb_mask = cv2.morphologyEx(YCrCb_mask, cv2.MORPH_OPEN, np.ones((3,3), np.uint8))
+    #skin color range for YCbCr color space
+    YCrCb_color = cv2.inRange(YCrCb_Image, (0, 135, 85), (255,180,135))
+    YCrCb_mask = cv2.morphologyEx(YCrCb_color, cv2.MORPH_OPEN, np.ones((3,3), np.uint8))
 
     #merge skin detection (YCbCr and hsv)
     global_mask=cv2.bitwise_and(YCrCb_mask,HSV_mask)
