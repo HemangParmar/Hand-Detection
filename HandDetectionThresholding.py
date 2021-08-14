@@ -1,7 +1,6 @@
-# organize imports
+# import libraries
 import cv2
 import imutils
-
 
 # global variables
 bg = None
@@ -9,9 +8,7 @@ bg = None
 def empty(a):
     pass
 
-#--------------------------------------------------
 # To find the running average over the background
-#--------------------------------------------------
 def run_avg(image, aWeight):
     global bg
     # initialize the background
@@ -22,10 +19,8 @@ def run_avg(image, aWeight):
     # compute weighted average, accumulate it and update the background
     cv2.accumulateWeighted(image, bg, aWeight)
 
-#---------------------------------------------
 # To segment the region of hand in the image
-#---------------------------------------------
-def segment(image, threshold=25):
+def segment(image, threshold=70):
     global bg
     # find the absolute difference between background and current frame
     diff = cv2.absdiff(bg.astype("uint8"), image)
@@ -44,9 +39,7 @@ def segment(image, threshold=25):
         segmented = max(cnts, key=cv2.contourArea)
         return (thresholded, segmented)
 
-#-----------------
 # MAIN FUNCTION
-#-----------------
 if __name__ == "__main__":
     # initialize weight for running average
     aWeight = 0.5
@@ -99,7 +92,7 @@ if __name__ == "__main__":
                 (thresholded, segmented) = hand
 
                 # draw the segmented region and display the frame
-                cv2.drawContours(clone, [segmented + (right, top)], -1, (0, 0, 255),4)
+                cv2.drawContours(clone, [segmented + (right, top)], -1, (0, 0, 255))
                 cv2.imshow("Thesholded", thresholded)
                 
                 threshold1 = cv2.getTrackbarPos("Threshold1", "Parameters")
